@@ -1,11 +1,8 @@
 import { config } from "dotenv";
 config();
 
-
-// const username = "newUser"
-// const pass = "4sGiHVU3BK10Y0K6"
-// const databaseName = "newData"
-// const uri = `mongodb+srv://${username}:${pass}@cluster0.z65cprz.mongodb.net/?retryWrites=true&w=majority`
-
 export const PORT = process.env.PORT || 4000;
-export const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/notesdb";
+export const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mern-tasks";
+export const TOKEN_SECRET = process.env.TOKEN_SECRET || "secret";
+export const CSRF_SECRET = process.env.CSRF_SECRET || "myCSRFSecretKey";
+export const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5174";
